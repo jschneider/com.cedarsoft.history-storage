@@ -13,7 +13,6 @@ import java.io.ByteArrayOutputStream;
 public class PrimArraysTest {
   @Test
   public void doIt() throws Exception {
-    PrimArrays.getDescriptor();
     PrimArrays.ArrayHolder.Builder builder = PrimArrays.ArrayHolder.newBuilder();
 
     builder.addId(100);
@@ -29,7 +28,7 @@ public class PrimArraysTest {
     ByteArrayOutputStream out = new ByteArrayOutputStream();
     arrayHolder.writeTo(out);
 
-    Assertions.assertThat(out.size()).isEqualTo(31);
-    Assertions.assertThat(HashCode.fromBytes(out.toByteArray()).toString()).isEqualTo("0a01641202d00f1a02d00f2202d10f2a040070fa44320800000000004a9f40");
+    Assertions.assertThat(out.size()).isEqualTo(25);
+    Assertions.assertThat(HashCode.fromBytes(out.toByteArray()).toString()).isEqualTo("086410d00f18d00f20d10f2d0070fa443100000000004a9f40");
   }
 }
