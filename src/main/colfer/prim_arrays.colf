@@ -1,0 +1,11 @@
+package asdf
+
+type PrimArraysColfer struct {
+    id    uint64
+    ids   []uint64
+    time    []uint64
+    valueInteger    []int32
+    valueInteger64    []int64
+    valueFloat    []float32
+    valueDouble    []float64
+}
