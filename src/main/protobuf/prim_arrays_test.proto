@@ -1,0 +1,18 @@
+/**
+ * @author Johannes Schneider (<a href="mailto:js@cedarsoft.com">js@cedarsoft.com</a>)
+ */
+syntax = "proto3";
+package tutorial;
+
+option java_package = "com.cedarsoft.history.storage";
+option java_outer_classname = "PrimArrays";
+option optimize_for = LITE_RUNTIME;
+
+message ArrayHolder {
+  repeated uint64 id = 1;
+  repeated uint64 time = 2;
+  repeated int32 valueInteger = 3;
+  repeated int64 value64Integer = 4;
+  repeated float valueFloat = 5;
+  repeated double valueDouble = 6;
+}
