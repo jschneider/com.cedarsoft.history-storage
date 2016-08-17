@@ -1,6 +1,6 @@
 package com.cedarsoft.proto;
 
-import com.example.tutorial.Storage;
+import com.cedarsoft.history.storage.Storage;
 import org.apache.commons.compress.compressors.xz.XZCompressorOutputStream;
 import org.junit.*;
 
