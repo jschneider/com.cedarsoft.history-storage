@@ -45,6 +45,10 @@
       <artifactId>xz</artifactId>
       <version>1.5</version>
     </dependency>
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+    </dependency>
 
     <dependency>
       <groupId>junit</groupId>
